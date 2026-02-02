@@ -3,6 +3,11 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Brain, Heart, Lightbulb, Users } from 'lucide-react'
 import Link from "next/link"
 
+
+
+
+
+
 export default function AboutPage() {
   return (
     <main className="container mx-auto px-4 py-8">
