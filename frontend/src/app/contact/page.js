@@ -14,6 +14,11 @@ export default function ContactPage() {
           <Card className="mb-8">
             <CardHeader>
               <CardTitle className="flex items-center">
+
+
+
+
+                
                 <Bot className="mr-2" />
                 AI Chatbot for Mental Health
               </CardTitle>
