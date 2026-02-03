@@ -1,13 +1,18 @@
-name:Deployment Pipline
+name: Backend Ci Pipeline
 on:
   pull_request:
-    branches:
-      - main
+    branches: [ main ]
+    paths:
+      - 'backend/**''
 
 jobs:
   build:
     name: Build the Project
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./backend
+
     steps:
       - uses: actions/checkout@v3
       - name: Use Node.js
