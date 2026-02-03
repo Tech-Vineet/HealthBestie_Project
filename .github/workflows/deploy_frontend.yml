@@ -25,6 +25,17 @@ jobs:
         tags: vineetkumardev/frontend_healthbestiehub:latest
     - name: Verify Pushed Image
       run: docker pull vineetkumardev/frontend_healthbestiehub:latest
+    - name: Deploy to EC2
+      uses: appleboy/ssh-action@master
+      with:
+        host: ${{ secrets.SSH_HOST }}
+        username: ${{ secrets.SSH_USERNAME }}
+        key: ${{ secrets.SSH_KEY }}
+        script: |
+          sudo docker pull vineetkumardev/frontend_healthbestiehub:latest
+          sudo docker stop frontend_healthbestiehub || true
+          sudo docker rm frontend_healthbestiehub || true
+          sudo docker run -d --name frontend_healthbestiehub -p 3001:3001 vineetkumardev/frontend_healthbestiehub:latest
 
      
 
