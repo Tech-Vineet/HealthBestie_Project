@@ -5,6 +5,11 @@ import Image from "next/image";
 import anxiety from '../image/anxiety.jpg';
 import depression from '../image/depression.jpg';
 import mania from '../image/mania.jpg';
+
+
+
+
+
 import sleep_disorder from '../image/sd.jpg';
 
 export default function Card({ testName, title, description }) {
