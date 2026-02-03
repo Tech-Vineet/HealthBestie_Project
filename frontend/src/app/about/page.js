@@ -40,6 +40,9 @@ export default function AboutPage() {
               <CardDescription>
                 Mental health influences our capacity to manage emotions, cope with life&apos;s challenges, and maintain a positive outlook.
               </CardDescription>
+
+
+              
             </CardContent>
           </Card>
           <Card>

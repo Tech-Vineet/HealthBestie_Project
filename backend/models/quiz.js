@@ -2,6 +2,9 @@ import mongoose from "mongoose";
 
 const quizSchema = new mongoose.Schema({
   type: { type: String, required: true }, 
+
+
+  
   questions: [
     {
       question: { type: String, required: true },
