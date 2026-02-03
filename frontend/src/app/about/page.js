@@ -52,6 +52,8 @@ export default function AboutPage() {
                 Healthy mental states foster better relationships, improved communication, and stronger social bonds.
               </CardDescription>
             </CardContent>
+
+            
           </Card>
           <Card>
             <CardHeader>
